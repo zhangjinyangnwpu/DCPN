@@ -1,0 +1,37 @@
+Tensor("inference_1/NC_network/conv0/Relu:0", shape=(?, 6, 3, 103, 6), dtype=float32)
+Tensor("inference_1/NC_network/conv1/Relu:0", shape=(?, 4, 3, 32, 6), dtype=float32)
+Tensor("inference_1/NC_network/conv2/Relu:0", shape=(?, 4, 2, 30, 12), dtype=float32)
+Tensor("inference_1/NC_network/conv3/Relu:0", shape=(?, 2, 2, 14, 24), dtype=float32)
+Tensor("inference_1/NC_network/conv4/Relu:0", shape=(?, 1, 2, 12, 48), dtype=float32)
+Tensor("inference_1/NC_network/conv5/Relu:0", shape=(?, 1, 1, 5, 48), dtype=float32)
+Tensor("inference_1/NC_network/conv6/Relu:0", shape=(?, 1, 1, 3, 96), dtype=float32)
+Tensor("inference_1/NC_network/conv7/Relu:0", shape=(?, 1, 1, 1, 96), dtype=float32)
+Tensor("inference_1/NC_network/conv8/conv3d/BiasAdd:0", shape=(?, 1, 1, 1, 10), dtype=float32)
+Loading model ...
+load successful...
+test_num_pixel: 326447
+test_num 40976
+40976
+end!
+8 0
+( 6274.0 / 6431.0 ) 0.9755870004664904
+( 18082.0 / 18449.0 ) 0.9801073228901296
+( 1772.0 / 1899.0 ) 0.9331226961558715
+( 2827.0 / 2864.0 ) 0.9870810055865922
+( 1145.0 / 1145.0 ) 1.0
+( 4770.0 / 4829.0 ) 0.9877821495133569
+( 1109.0 / 1130.0 ) 0.9814159292035398
+( 3456.0 / 3482.0 ) 0.9925330269959793
+( 747.0 / 747.0 ) 1.0
+[[ 6274    17     3     1     0     5    15     9     0]
+ [    1 18082     3    12     0    50     0     3     0]
+ [    0     0  1772     0     0     0     0    13     0]
+ [    0    77     0  2827     0     4     0     0     0]
+ [    0     0     0     0  1145     0     0     0     0]
+ [   52   256     1    23     0  4770     0     1     0]
+ [   14     0     0     0     0     0  1109     0     0]
+ [   90    17   120     1     0     0     6  3456     0]
+ [    0     0     0     0     0     0     0     0   747]]
+total right num: 40182.0
+accuracy: 0.9806228035923468
+kappa: 0.9739959251740431
